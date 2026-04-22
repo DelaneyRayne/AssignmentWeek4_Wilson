@@ -1,42 +1,50 @@
-/* ================= COLORS ================= */
+/* ===== COLORS ===== */
 :root {
-    --blue: #2a4d8f;
-    --green: #2e8b57;
+    --blue: #2f6f8f;
+    --green: #3fa34d;
     --pink: #e75480;
-    --light-grey: #f2f2f2;
+    --light-grey: #f0f0f0;
+    --grey: #cccccc;
     --white: #ffffff;
 }
 
-/* ================= PAGE STYLE ================= */
+/* ===== PAGE STYLE ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: var(--light-grey);
 }
 
-/* ================= HEADER ================= */
+/* ===== HEADER ===== */
 header {
     background-color: var(--blue);
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
 }
 
-/* ================= HERO SECTION ================= */
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* ===== HERO SECTION ===== */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--grey);
+    padding: 40px;
+}
+
+.info-box {
     background-color: var(--white);
-    padding: 30px;
-}
-
-.hero-text {
-    width: 60%;
-}
-
-.hero-image img {
     width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Buttons */
@@ -50,51 +58,54 @@ button {
     cursor: pointer;
 }
 
-.secondary-btn {
+.green-btn {
     background-color: var(--green);
 }
 
-/* ================= MAIN DASHBOARD ================= */
-main {
+/* ===== DASHBOARD LAYOUT ===== */
+.dashboard {
     display: flex;
     padding: 20px;
+}
+
+/* Main content */
+main {
+    flex: 3;
 }
 
 /* Widgets Row */
 .widgets {
     display: flex;
     gap: 20px;
-    flex: 3;
 }
 
 .card {
-    background-color: var(--white);
-    padding: 40px;
-    text-align: center;
-    border-radius: 15px;
+    background-color: var(--grey);
     flex: 1;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
 }
 
-/* Quote Section */
+/* Quote Box */
 .quote {
-    background-color: var(--white);
+    background-color: var(--grey);
     margin-top: 20px;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 40px;
 }
 
-/* ================= SIDEBAR ================= */
+/* Sidebar */
 .sidebar {
-    background-color: var(--white);
-    padding: 20px;
-    margin: 20px;
-    width: 200px;
+    background-color: var(--grey);
+    flex: 1;
+    margin-left: 20px;
+    padding: 40px;
 }
 
-/* ================= FOOTER ================= */
+/* Footer */
 footer {
     background-color: var(--blue);
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
