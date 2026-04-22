@@ -1,51 +1,104 @@
-/* CSS Variable */
+/* ===============================
+   COLOR VARIABLES
+   (Makes colors easy to reuse)
+================================ */
 :root {
-    --main-color: #2a6f97;
+    --blue: #1e3a8a;
+    --green: #16a34a;
+    --pink: #ec4899;
+    --light-grey: #f3f4f6;
+    --white: #ffffff;
 }
 
-/* Body */
+/* ===============================
+   BASIC PAGE STYLE
+================================ */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;  /* Clean, easy font */
     margin: 0;
+    background-color: var(--light-grey);
 }
 
-/* Header */
+/* ===============================
+   HEADER
+================================ */
 header {
-    background-color: var(--main-color);
+    background-color: var(--blue);
     color: white;
-    padding: 15px;
     text-align: center;
-}
-
-/* Navigation */
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-/* Sections */
-section {
     padding: 20px;
 }
 
-/* Image */
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* ===============================
+   MAIN DASHBOARD LAYOUT
+   (Flexbox makes it responsive)
+================================ */
+main {
+    display: flex;
+    flex-wrap: wrap;  /* Moves items to next row on small screens */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* ===============================
+   CARD STYLE SECTIONS
+================================ */
+section {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 300px;  /* Responsive card width */
+}
+
+/* Green headings */
+h2 {
+    color: var(--green);
+}
+
+/* ===============================
+   IMAGE STYLE
+================================ */
 img {
-    width: 250px;
-    display: block;
+    width: 100%;
+    max-width: 250px;
     margin-top: 10px;
 }
 
-/* Aside */
-aside {
-    background-color: #f2f2f2;
-    padding: 15px;
-    margin: 20px;
+/* ===============================
+   PINK BUTTON
+================================ */
+button {
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Footer */
+/* ===============================
+   SIDEBAR
+================================ */
+aside {
+    background-color: white;
+    margin: 20px;
+    padding: 15px;
+    border-left: 4px solid var(--blue);
+}
+
+/* ===============================
+   FOOTER
+================================ */
 footer {
-    background-color: var(--main-color);
+    background-color: var(--blue);
     color: white;
     text-align: center;
     padding: 10px;
