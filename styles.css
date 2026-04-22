@@ -1,6 +1,5 @@
 /* ===============================
    COLOR VARIABLES
-   (Makes colors easy to reuse)
 ================================ */
 :root {
     --blue: #1e3a8a;
@@ -38,7 +37,6 @@ nav a {
 
 /* ===============================
    MAIN DASHBOARD LAYOUT
-   (Flexbox makes it responsive)
 ================================ */
 main {
     display: flex;
