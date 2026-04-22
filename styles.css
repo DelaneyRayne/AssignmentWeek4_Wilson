@@ -102,10 +102,46 @@ main {
     padding: 40px;
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
 footer {
     background-color: var(--blue);
     color: white;
+    padding: 30px 20px;
+}
+
+/* Layout for footer sections */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Each column */
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+/* Footer links */
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom copyright bar */
+.footer-bottom {
     text-align: center;
-    padding: 15px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 10px;
 }
