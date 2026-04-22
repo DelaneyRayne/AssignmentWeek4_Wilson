@@ -1,21 +1,21 @@
-/* ===== COLORS ===== */
+/* ================= COLOR VARIABLES ================= */
 :root {
     --blue: #2f6f8f;
     --green: #3fa34d;
     --pink: #e75480;
-    --light-grey: #f0f0f0;
-    --grey: #cccccc;
+    --light-grey: #f2f2f2;
+    --grey: #dcdcdc;
     --white: #ffffff;
 }
 
-/* ===== PAGE STYLE ===== */
+/* ================= GLOBAL STYLES ================= */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: var(--light-grey);
 }
 
-/* ===== HEADER ===== */
+/* ================= HEADER ================= */
 header {
     background-color: var(--blue);
     color: white;
@@ -25,17 +25,21 @@ header {
 
 nav a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
+    margin: 0 10px;
 }
 
-/* ===== HERO SECTION ===== */
+/* ================= HERO SECTION ================= */
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--grey);
     padding: 40px;
+}
+
+.hero-text {
+    width: 60%;
 }
 
 .info-box {
@@ -45,6 +49,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
 }
 
 /* Buttons */
@@ -62,7 +67,7 @@ button {
     background-color: var(--green);
 }
 
-/* ===== DASHBOARD LAYOUT ===== */
+/* ================= DASHBOARD ================= */
 .dashboard {
     display: flex;
     padding: 20px;
@@ -73,7 +78,7 @@ main {
     flex: 3;
 }
 
-/* Widgets Row */
+/* Widgets row */
 .widgets {
     display: flex;
     gap: 20px;
@@ -87,11 +92,12 @@ main {
     border-radius: 20px;
 }
 
-/* Quote Box */
+/* Quote section */
 .quote {
     background-color: var(--grey);
     margin-top: 20px;
     padding: 40px;
+    border-radius: 10px;
 }
 
 /* Sidebar */
@@ -100,35 +106,33 @@ main {
     flex: 1;
     margin-left: 20px;
     padding: 40px;
+    border-radius: 10px;
 }
 
-/* ===== FOOTER ===== */
+/* ================= FOOTER ================= */
 footer {
     background-color: var(--blue);
     color: white;
     padding: 30px 20px;
 }
 
-/* Layout for footer sections */
 .footer-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-/* Each column */
 .footer-section {
     flex: 1;
     min-width: 200px;
     margin: 10px;
 }
 
-.footer-section h3,
-.footer-section h4 {
-    margin-bottom: 10px;
+.footer-section ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Footer links */
 .footer-section a {
     color: white;
     text-decoration: none;
@@ -138,10 +142,32 @@ footer {
     text-decoration: underline;
 }
 
-/* Bottom copyright bar */
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
     border-top: 1px solid rgba(255,255,255,0.3);
     padding-top: 10px;
+}
+
+/* ================= MOBILE FRIENDLY ================= */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .widgets {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
 }
