@@ -1,100 +1,97 @@
-/* ===============================
-   COLOR VARIABLES
-================================ */
+/* ================= COLORS ================= */
 :root {
-    --blue: #1e3a8a;
-    --green: #16a34a;
-    --pink: #ec4899;
-    --light-grey: #f3f4f6;
+    --blue: #2a4d8f;
+    --green: #2e8b57;
+    --pink: #e75480;
+    --light-grey: #f2f2f2;
     --white: #ffffff;
 }
 
-/* ===============================
-   BASIC PAGE STYLE
-================================ */
+/* ================= PAGE STYLE ================= */
 body {
-    font-family: Arial, sans-serif;  /* Clean, easy font */
     margin: 0;
+    font-family: Arial, sans-serif;
     background-color: var(--light-grey);
 }
 
-/* ===============================
-   HEADER
-================================ */
+/* ================= HEADER ================= */
 header {
     background-color: var(--blue);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
-/* Navigation links */
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-/* ===============================
-   MAIN DASHBOARD LAYOUT
-================================ */
-main {
+/* ================= HERO SECTION ================= */
+.hero {
     display: flex;
-    flex-wrap: wrap;  /* Moves items to next row on small screens */
-    gap: 20px;
-    padding: 20px;
-}
-
-/* ===============================
-   CARD STYLE SECTIONS
-================================ */
-section {
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--white);
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1 1 300px;  /* Responsive card width */
+    padding: 30px;
 }
 
-/* Green headings */
-h2 {
-    color: var(--green);
+.hero-text {
+    width: 60%;
 }
 
-/* ===============================
-   IMAGE STYLE
-================================ */
-img {
-    width: 100%;
-    max-width: 250px;
-    margin-top: 10px;
+.hero-image img {
+    width: 250px;
 }
 
-/* ===============================
-   PINK BUTTON
-================================ */
+/* Buttons */
 button {
     background-color: var(--pink);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 8px 15px;
     margin-top: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/* ===============================
-   SIDEBAR
-================================ */
-aside {
-    background-color: white;
-    margin: 20px;
-    padding: 15px;
-    border-left: 4px solid var(--blue);
+.secondary-btn {
+    background-color: var(--green);
 }
 
-/* ===============================
-   FOOTER
-================================ */
+/* ================= MAIN DASHBOARD ================= */
+main {
+    display: flex;
+    padding: 20px;
+}
+
+/* Widgets Row */
+.widgets {
+    display: flex;
+    gap: 20px;
+    flex: 3;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    flex: 1;
+}
+
+/* Quote Section */
+.quote {
+    background-color: var(--white);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    background-color: var(--white);
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+}
+
+/* ================= FOOTER ================= */
 footer {
     background-color: var(--blue);
     color: white;
