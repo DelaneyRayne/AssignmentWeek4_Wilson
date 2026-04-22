@@ -3,80 +3,70 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <!-- Page Title (Required) -->
     <title>Student Success Dashboard</title>
-
-    <!-- Link to External CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- ===== HEADER BAR ===== -->
     <header>
-        <h1>Student Success Dashboard</h1>
-
-        <!-- Navigation Menu -->
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Resources</a>
-            <a href="#">Wellness</a>
-        </nav>
+        <h1>Dashboard Academic Health</h1>
     </header>
 
 
-    <!-- ================= MAIN CONTENT ================= -->
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Achieve Your Best Student Life</h2>
+            <p>
+                Stay organized, healthy, and focused with helpful tools
+                designed for student success.
+            </p>
+
+            <button>Get Started</button>
+            <button class="secondary-btn">Learn More</button>
+        </div>
+
+        <div class="hero-image">
+            <img src="student.jpg" alt="Student working on laptop">
+        </div>
+    </section>
+
+
+    <!-- ===== MAIN DASHBOARD AREA ===== -->
     <main>
 
-        <!-- Section 1 -->
-        <section>
-            <h2>Welcome</h2>
+        <!-- Widget Cards -->
+        <section class="widgets">
 
-            <article>
-                <p>
-                    This dashboard helps students stay organized,
-                    healthy, and focused on their goals.
-                </p>
+            <article class="card">Widget</article>
+            <article class="card">Widget</article>
+            <article class="card">Widget</article>
 
-                <!-- Image with alt text (Required) -->
-                <img src="student.jpg" alt="Student studying at a desk">
-
-                <!-- Pink Action Button -->
-                <button>Get Started</button>
-            </article>
         </section>
 
-
-        <!-- Section 2 -->
-        <section>
-            <h2>Helpful Features</h2>
-
+        <!-- Widget Quote Section -->
+        <section class="quote">
             <article>
-                <h3>What You Can Do:</h3>
-
-                <!-- List (Required) -->
-                <ul>
-                    <li>Track study time</li>
-                    <li>Monitor wellness habits</li>
-                    <li>Stay organized with deadlines</li>
-                </ul>
+                <h3>Widget Quote</h3>
+                <p>"Small daily improvements lead to big results."</p>
             </article>
         </section>
 
     </main>
 
 
-    <!-- ================= SIDEBAR ================= -->
-    <aside>
-        <h3>Student Tip</h3>
-        <p>Take short breaks while studying to stay productive.</p>
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+        <h3>Advertisement</h3>
+        <p>Check out student productivity tools.</p>
     </aside>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- ===== FOOTER ===== -->
     <footer>
-        <p>© 2026 Student Success Dashboard</p>
+        <p>Footer</p>
     </footer>
 
 </body>
